@@ -15,7 +15,7 @@ export const PATCH = async (request: Request, { params }: { params: { id: string
             brandId: body.brandId
         }
     });
-    return NextResponse.json(product, { status: 200 });
+    return NextResponse.json(product, { status: 201 });
 }
 
 export const DELETE = async (request: Request, { params }: { params: { id: string } }) => {
